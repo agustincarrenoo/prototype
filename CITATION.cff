@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: BIM Prototype 02
+message: "If you use this software, please cite it using the metadata from this file."
+authors:
+  - family-names: "Carreño"
+    given-names: "Agustin"
+    # email: "carrenoagustin77@gmail.com"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+type: software
+repository-code: "https://github.com/agustincarrenoo/prototype"
+url: "https://agustincarrenoo.github.io/prototype"
+abstract: "A Quarto website for querying and profiling Wikidata items using SPARQL."
+keywords:
+  - wikidata
+  - quarto
+  - sparql
+  - rdf
+  - semantic-web
+license: MIT
+version: 0.1.0
+# date-released: 2026-05-07
