@@ -6,12 +6,21 @@ title: "Project Log"
 
 Track important milestones and implementation notes here.
 
+## 2026-07-20
+
+- Audited Wikidata item `Q138652613` against the official Sprengel Museum page.
+- Confirmed instance, title, participant, curator, start and end dates, and official website; added source URL and retrieval-date references.
+- Added the official Artist and Exhibition data-model mappings from the class project repository.
+- Restored the SPARQL network visualization from the current course template.
+- Added ORCID metadata to Quarto and the citation file.
+- Documented AI-assistant use, benefits, limitations, and attribution.
+
 ## 2026-04-15
 
 - Initialized Quarto website source files.
 - Added GitHub Pages deployment workflow.
 - Set Quarto output directory to `docs` for GitHub Pages publishing.
-- Added notebook-backed item profile page for Wikidata item `Q138547468`.
+- Added notebook-backed item profile page from the original template; it was later updated to `Q138652613`.
 - Created reusable helper module `wikidata_profile.py` for query, fetch, and rendering logic.
 - Added visual summaries to the item profile page (top properties and value type breakdown).
 - Fixed Wikidata endpoint access by sending explicit HTTP headers in SPARQL requests.

@@ -8,7 +8,7 @@
 
 <meta name="author" content="Agustin Carreño">
 
-<title>Project Log – BIM Prototype 02</title>
+<title>AI Use and Attribution – BIM Prototype 02</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./project-log.html" aria-current="page"> 
+    <a class="nav-link" href="./project-log.html"> 
 <span class="menu-text">Project Log</span></a>
   </li>  
   <li class="nav-item">
@@ -124,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./ai-use.html"> 
+    <a class="nav-link active" href="./ai-use.html" aria-current="page"> 
 <span class="menu-text">AI Use</span></a>
   </li>  
 </ul>
@@ -150,16 +150,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#project-log" id="toc-project-log" class="nav-link active" data-scroll-target="#project-log">Project Log</a>
-  <ul class="collapse">
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">2026-07-20</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2026-04-15</a></li>
-  <li><a href="#publishing-instructions" id="toc-publishing-instructions" class="nav-link" data-scroll-target="#publishing-instructions">Publishing Instructions</a>
-  <ul class="collapse">
-  <li><a href="#manual-publish-no-code-changes" id="toc-manual-publish-no-code-changes" class="nav-link" data-scroll-target="#manual-publish-no-code-changes">Manual publish (no code changes)</a></li>
-  <li><a href="#if-deployment-fails-on-pages-configuration" id="toc-if-deployment-fails-on-pages-configuration" class="nav-link" data-scroll-target="#if-deployment-fails-on-pages-configuration">If deployment fails on Pages configuration</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#uses" id="toc-uses" class="nav-link active" data-scroll-target="#uses">Uses</a></li>
+  <li><a href="#benefits" id="toc-benefits" class="nav-link" data-scroll-target="#benefits">Benefits</a></li>
+  <li><a href="#limitations-and-risks" id="toc-limitations-and-risks" class="nav-link" data-scroll-target="#limitations-and-risks">Limitations and risks</a></li>
+  <li><a href="#attribution-and-sources" id="toc-attribution-and-sources" class="nav-link" data-scroll-target="#attribution-and-sources">Attribution and sources</a></li>
+  <li><a href="#good-practice-statement" id="toc-good-practice-statement" class="nav-link" data-scroll-target="#good-practice-statement">Good-practice statement</a></li>
   </ul>
 </nav>
     </div>
@@ -168,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Project Log</h1>
+<h1 class="title">AI Use and Attribution</h1>
 </div>
 
 
@@ -191,65 +186,52 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="project-log" class="level1">
-<h1>Project Log</h1>
-<p>Track important milestones and implementation notes here.</p>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">2026-07-20</h2>
+<section id="uses" class="level2">
+<h2 class="anchored" data-anchor-id="uses">Uses</h2>
+<p>An OpenAI Codex agent was used on 20 July 2026 to:</p>
 <ul>
-<li>Audited Wikidata item <code>Q138652613</code> against the official Sprengel Museum page.</li>
-<li>Confirmed instance, title, participant, curator, start and end dates, and official website; added source URL and retrieval-date references.</li>
-<li>Added the official Artist and Exhibition data-model mappings from the class project repository.</li>
-<li>Restored the SPARQL network visualization from the current course template.</li>
-<li>Added ORCID metadata to Quarto and the citation file.</li>
-<li>Documented AI-assistant use, benefits, limitations, and attribution.</li>
+<li>compare Wikidata item <code>Q138652613</code> with the official Sprengel Museum exhibition page;</li>
+<li>identify missing, incorrect, or insufficiently referenced statements;</li>
+<li>inspect the course instructions in Wikiversity and Stud.IP;</li>
+<li>compare this fork with the current course and class-project repositories;</li>
+<li>update Quarto source files, restore the SPARQL network graph, and check the rendered publication;</li>
+<li>assist with Git and GitHub Pages publication.</li>
+</ul>
+<p>The student reviewed the scope and explicitly authorized publication. Wikidata edits were not made until the student approved them.</p>
+</section>
+<section id="benefits" class="level2">
+<h2 class="anchored" data-anchor-id="benefits">Benefits</h2>
+<ul>
+<li>Faster comparison across Wikidata, the museum source, course instructions, and repository history.</li>
+<li>Consistent detection of stale example identifiers and missing navigation entries.</li>
+<li>Repeatable technical checks before publication.</li>
 </ul>
 </section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1">2026-04-15</h2>
+<section id="limitations-and-risks" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-and-risks">Limitations and risks</h2>
 <ul>
-<li>Initialized Quarto website source files.</li>
-<li>Added GitHub Pages deployment workflow.</li>
-<li>Set Quarto output directory to <code>docs</code> for GitHub Pages publishing.</li>
-<li>Added notebook-backed item profile page from the original template; it was later updated to <code>Q138652613</code>.</li>
-<li>Created reusable helper module <code>wikidata_profile.py</code> for query, fetch, and rendering logic.</li>
-<li>Added visual summaries to the item profile page (top properties and value type breakdown).</li>
-<li>Fixed Wikidata endpoint access by sending explicit HTTP headers in SPARQL requests.</li>
-<li>Parameterized notebook workflow so <code>item_id</code> can be changed in one place.</li>
-<li>Enabled collapsible code blocks in rendered notebook HTML.</li>
-<li>Initialized git repository, pushed to <code>mrchristian/prototype</code>, and connected <code>origin</code>.</li>
-<li>Fixed GitHub Actions Pages setup failure by enabling automatic Pages enablement in workflow.</li>
-<li>Added manual <code>workflow_dispatch</code> deployment instructions in project documentation.</li>
+<li>AI output can be incomplete or incorrect and therefore requires verification against primary sources.</li>
+<li>Authentication and course-only information may require the student’s existing institutional session.</li>
+<li>A successful build does not prove that every statement is academically correct; source and provenance checks remain necessary.</li>
+<li>Generated code and documentation must be reviewed for licensing, privacy, and attribution.</li>
 </ul>
 </section>
-<section id="publishing-instructions" class="level2">
-<h2 class="anchored" data-anchor-id="publishing-instructions">Publishing Instructions</h2>
-<p>Use these steps to publish and re-publish the site to GitHub Pages.</p>
-<ol type="1">
-<li>Commit and push updates to <code>main</code>.</li>
-<li>In GitHub, open <strong>Settings -&gt; Pages</strong>.</li>
-<li>Under Build and deployment, set Source to <strong>GitHub Actions</strong>.</li>
-<li>Confirm the workflow file <code>.github/workflows/publish.yml</code> is present.</li>
-<li>Wait for the <strong>Publish Quarto Site</strong> workflow to complete.</li>
-</ol>
-<section id="manual-publish-no-code-changes" class="level3">
-<h3 class="anchored" data-anchor-id="manual-publish-no-code-changes">Manual publish (no code changes)</h3>
-<ol type="1">
-<li>Open <strong>Actions</strong> in GitHub.</li>
-<li>Select <strong>Publish Quarto Site</strong>.</li>
-<li>Click <strong>Run workflow</strong> and choose <code>main</code>.</li>
-</ol>
-</section>
-<section id="if-deployment-fails-on-pages-configuration" class="level3">
-<h3 class="anchored" data-anchor-id="if-deployment-fails-on-pages-configuration">If deployment fails on Pages configuration</h3>
+<section id="attribution-and-sources" class="level2">
+<h2 class="anchored" data-anchor-id="attribution-and-sources">Attribution and sources</h2>
 <ul>
-<li>Re-check Settings -&gt; Pages is enabled for GitHub Actions.</li>
-<li>Re-run the workflow after enabling Pages.</li>
+<li>AI assistant: OpenAI Codex, used through the Codex desktop application, 20 July 2026.</li>
+<li>Course instructions: <a href="https://en.wikiversity.org/wiki/Linked-Open-Exhibition-Exercise">Linked-Open-Exhibition-Exercise</a> and the BIM-126-02 Data Science course information in Stud.IP.</li>
+<li>Exhibition source: <a href="https://www.sprengel-museum.de/ausstellungen/vorschau/aladag">Sprengel Museum Hannover</a>.</li>
+<li>Data source: <a href="https://www.wikidata.org/wiki/Q138652613">Wikidata Q138652613</a>.</li>
+<li>Data-model source: <a href="https://github.com/NFDI4Culture/linked-open-exhibition/tree/main/data-models">NFDI4Culture/linked-open-exhibition</a>.</li>
+<li>Notebook template: <a href="https://github.com/mrchristian/prototype">mrchristian/prototype</a>.</li>
 </ul>
+</section>
+<section id="good-practice-statement" class="level2">
+<h2 class="anchored" data-anchor-id="good-practice-statement">Good-practice statement</h2>
+<p>Primary sources were preferred, changes were kept in version control, and AI assistance is disclosed here so that the workflow can be inspected and reproduced.</p>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->

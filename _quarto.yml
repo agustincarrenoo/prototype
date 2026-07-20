@@ -6,6 +6,14 @@ project:
     - project-log.qmd
     - wikidata.qmd
     - wikidata-item.ipynb
+    - data-models/artist-datamodel.qmd
+    - data-models/exhibition-datamodel.qmd
+    - ai-use.qmd
+
+title: "BIM Prototype 02"
+author:
+  - name: "Agustin Carreño"
+    orcid: "0009-0009-7574-2731"
 
 website:
   title: "BIM Prototype 02"
@@ -19,6 +27,20 @@ website:
         text: Wikidata
       - href: wikidata-item.ipynb
         text: Item Profile
+      - text: "Data Models"
+        menu:
+          - href: data-models/artist-datamodel.qmd
+            text: Artist Data Model
+          - href: data-models/exhibition-datamodel.qmd
+            text: Exhibition Data Model
+      - href: ai-use.qmd
+        text: AI Use
+    right:
+      - icon: github
+        href: https://github.com/agustincarrenoo/prototype
+        aria-label: GitHub
+
+  repo-url: https://github.com/agustincarrenoo/prototype
 
 format:
   html:

@@ -14,9 +14,13 @@ This section documents Wikidata workflows, queries, and references for the proje
 
 The profile page is generated from `wikidata-item.ipynb`, which:
 
-1. Sets an `item_id` input (for example, `Q138547468`).
+1. Sets the `item_id` input to `Q138652613`.
 2. Builds a SPARQL query for all direct statements on the item.
 3. Calls the Wikidata Query Service endpoint.
 4. Renders the returned data as a styled HTML profile.
 
 The helper module `wikidata_profile.py` contains reusable logic for querying, transforming, and rendering the data.
+
+## Primary source
+
+The statements were checked against the [official Sprengel Museum exhibition page](https://www.sprengel-museum.de/ausstellungen/vorschau/aladag) and carry retrieval-date references in Wikidata.

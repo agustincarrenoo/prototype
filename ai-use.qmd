@@ -1,0 +1,42 @@
+---
+title: "AI Use and Attribution"
+---
+
+## Uses
+
+An OpenAI Codex agent was used on 20 July 2026 to:
+
+- compare Wikidata item `Q138652613` with the official Sprengel Museum exhibition page;
+- identify missing, incorrect, or insufficiently referenced statements;
+- inspect the course instructions in Wikiversity and Stud.IP;
+- compare this fork with the current course and class-project repositories;
+- update Quarto source files, restore the SPARQL network graph, and check the rendered publication;
+- assist with Git and GitHub Pages publication.
+
+The student reviewed the scope and explicitly authorized publication. Wikidata edits were not made until the student approved them.
+
+## Benefits
+
+- Faster comparison across Wikidata, the museum source, course instructions, and repository history.
+- Consistent detection of stale example identifiers and missing navigation entries.
+- Repeatable technical checks before publication.
+
+## Limitations and risks
+
+- AI output can be incomplete or incorrect and therefore requires verification against primary sources.
+- Authentication and course-only information may require the student’s existing institutional session.
+- A successful build does not prove that every statement is academically correct; source and provenance checks remain necessary.
+- Generated code and documentation must be reviewed for licensing, privacy, and attribution.
+
+## Attribution and sources
+
+- AI assistant: OpenAI Codex, used through the Codex desktop application, 20 July 2026.
+- Course instructions: [Linked-Open-Exhibition-Exercise](https://en.wikiversity.org/wiki/Linked-Open-Exhibition-Exercise) and the BIM-126-02 Data Science course information in Stud.IP.
+- Exhibition source: [Sprengel Museum Hannover](https://www.sprengel-museum.de/ausstellungen/vorschau/aladag).
+- Data source: [Wikidata Q138652613](https://www.wikidata.org/wiki/Q138652613).
+- Data-model source: [NFDI4Culture/linked-open-exhibition](https://github.com/NFDI4Culture/linked-open-exhibition/tree/main/data-models).
+- Notebook template: [mrchristian/prototype](https://github.com/mrchristian/prototype).
+
+## Good-practice statement
+
+Primary sources were preferred, changes were kept in version control, and AI assistance is disclosed here so that the workflow can be inspected and reproduced.
